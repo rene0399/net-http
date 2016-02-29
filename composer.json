@@ -1,11 +1,11 @@
 {
     "name": "net/http",
     "type": "library",
-    "description": "A basic HTTP client",
+    "description": "A basic HTTP client - Ceon Internet Fork",
     "authors": [
         {
-            "name": "Mark Rickerby",
-            "email": "mark.rickerby@bigcommerce.com"
+            "name": "René Askjæe",
+            "email": "rene@ceoninternet.dk"
         }
     ],
 	"license": "MIT",

@@ -569,4 +569,21 @@ class Net_Http_Client {
 	{
 		return $this->options;
 	}
+
+	public function enableCookies($string)
+	{
+		$this->options[CURLOPT_COOKIESESSION] = true;
+		$this->options[CURLOPT_COOKIEFILE] =  storage_path().'/app/cookies/'.$string;
+		$this->options[CURLOPT_COOKIEJAR] =  storage_path().'/app/cookies/'.$string;
+	}
+
+	public function getCookies($string)
+	{
+		return storage_path().'/app/cookies/'.$string;
+	}
+
+	public function setCookie($string)
+	{
+		$this->options[CURLOPT_COOKIE] = $string;
+	}
 }

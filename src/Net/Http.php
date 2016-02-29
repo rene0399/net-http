@@ -108,6 +108,6 @@ class Net_Http {
 	 */
 	public static function setSslVersion($version)
 	{
-		self::$options[CURLOPT_SSLVERSION] = $path;
+		self::$options[CURLOPT_SSLVERSION] = $version;
 	}
 }
